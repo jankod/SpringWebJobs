@@ -12,7 +12,7 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 @Setter
 @Getter
 @Entity
-@Table (name = "JobDetail", indexes = {
+@Table (name = "job_detail", indexes = {
         @Index (name = "idx_jobdetail_name", columnList = "name", unique = true),
 })
 @FieldDefaults (level = AccessLevel.PUBLIC)
