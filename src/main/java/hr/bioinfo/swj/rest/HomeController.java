@@ -39,4 +39,14 @@ public class HomeController {
         model.addAttribute("content", "about :: content");
         return "about";
     }
+
+    @GetMapping("/new-job")
+    public String newJob(Model model) {
+        log.info("HomeController.newJob() called");
+        model.addAttribute("title", "New Job - SpringWebJobs");
+        model.addAttribute("pageTitle", "Create New Job");
+        model.addAttribute("activeTab", "jobs");
+        model.addAttribute("content", "new-job :: content");
+        return "new-job";
+    }
 }
